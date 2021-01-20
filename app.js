@@ -8,15 +8,19 @@ const app = express()
 
 app.use(express.json())
 
-app.get('/api/hello', (req, res) => {
-    res.send({
-        express: "Fuck you"
-    })
+app.post('/api/vote', (req, res) => {
 })
 
-app.post('/api/world', (req, res) => {
-    console.log(req.body)
-    res.status(200).send(`I received your POSt re ${req.body.post}`)
+app.get('/api/data', (req, res) => {
+    
+})
+
+app.get('/api/counts',(req,res)=>{
+
+})
+
+app.get('/api/resutls',(req,res)=>{
+    
 })
 
 module.exports = app;
