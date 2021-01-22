@@ -10,11 +10,13 @@ const voterScehma = new mongoose.Schema({
         type: Boolean,
         required: true
     },
+    time_of_submission: {
+        type: String,
+        required: true
+    }
 
 }, {
-    timestamps: {
-        createdAt: 'time_of_submission'
-    }
+    timestamps: true
 })
 
 const Voter = mongoose.model('Voter', voterScehma)
